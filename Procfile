@@ -1,0 +1,1 @@
+web: sh -c 'cd rj_portal && gunicorn rj_portal.wsgi'

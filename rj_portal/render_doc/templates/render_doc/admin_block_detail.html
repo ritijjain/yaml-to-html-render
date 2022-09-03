@@ -1,0 +1,16 @@
+{% extends 'admin/change_form.html' %} {% block extrahead %} {{ block.super }}
+{% endblock %} 
+
+{% block submit_buttons_bottom %} {{ block.super }}
+
+{% if original.pk %}
+<div class="submit-row">
+  <p><a target="_blank" href="{% url 'render_doc_html' original.pk %}">Render HTML</a></p>
+  <br>
+
+  <p>(<strong>Warning:</strong> This doc will be immediately made public on <a href="https://ritijjain.com/resume">ritijjain.com/resume</a>)
+  <a target="_blank" href="{% url 'render_send_to_gh' original.pk %}">Send to GitHub</a></p>
+</div>
+{% endif %} 
+
+{% endblock %}

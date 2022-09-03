@@ -1,0 +1,33 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "==3.2.5"
+djongo = "*"
+jsonfield = "*"
+django-jsoneditor = "*"
+django-crispy-forms = "*"
+django-json-widget = "*"
+django-markdownify = "*"
+xhtml2pdf = "*"
+weasyprint = "*"
+django-dbtemplates = "*"
+django-tinymce = "*"
+django-heroku = "*"
+gunicorn = "*"
+dnspython = "*"
+django-yamlfield = "*"
+django-ace = "*"
+django-codemirror-widget = "*"
+djangocodemirror = "*"
+mergedeep = "*"
+unidecode = "*"
+pygithub = "*"
+django-simple-history = "*"
+
+[requires]
+python_version = "3.8"
